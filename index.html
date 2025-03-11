@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="music-player">
+        <h2 id="song-title">Song Title</h2>
+        <audio id="audio-player"></audio>
+
+        <div class="controls">
+            <button id="prev-btn">⏮</button>
+            <button id="play-pause-btn">▶️</button>
+            <button id="next-btn">⏭</button>
+        </div>
+
+        <input type="range" id="progress-bar" value="0" max="100">
+
+        <div class="volume-controls">
+            <span>🔊</span>
+            <input type="range" id="volume-slider" value="50" max="100">
+        </div>
+    </div>
+    <div class="time-display">
+        <span id="current-time">0:00</span> / <span id="total-duration">0:00</span>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
